@@ -22,4 +22,4 @@ Four distinct greedy heuristics are implemented to select the next available ass
 ### 2. A* Search
 An $A^*$ search algorithm guarantees the mathematically optimal schedule (minimum total days). 
 * **State:** Defined by the current day, completed assignments, and available outputs.
-* **Heuristic $h(n)$:** `ceil(remaining_assignments / group_size)`. This admissible heuristic assumes perfect parallelization to guarantee the shortest possible schedule without overestimating.
+* **Heuristic $h(n)$:** `(remaining_assignments * group_size)`. This admissible heuristic assumes perfect parallelization to guarantee the shortest possible schedule without overestimating.
